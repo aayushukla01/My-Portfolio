@@ -149,7 +149,26 @@
 .imp{
   font-weight: 800  
 }
+@media (max-width: 768px) {
+    .box {
+        grid-template-columns: 1fr; /* Stacks text and image into a single column */
+        margin: 20px 10px; /* Reduces huge desktop margins */
+        height: auto; /* Lets the box size itself naturally based on content */
+        gap: 20px;
+    }
+    
+    .pro-text-content {
+        margin: 10px; /* Removes massive desktop padding on small screens */
+    }
 
+    .pro-img {
+        height: 250px; /* Gives the image a fixed, reasonable height on mobile */
+    }
+    
+    .box:hover {
+        transform: none; /* Optional: removes the hover lift on mobile since there's no mouse */
+    }
+}
 .con-box{
     display:flex;
     flex-direction:row;

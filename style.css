@@ -202,3 +202,25 @@
     padding: 1rem 2rem;
     box-sizing: border-box;
 }
+@media (max-width: 768px) {
+    .help {
+        padding: 2rem 1rem; /* Adjusts padding for a tighter fit */
+    }
+
+    .con-box {
+        flex-direction: column; /* Stacks copyright on top of icons */
+        gap: 20px; /* Reduces the massive 50px desktop gap */
+        text-align: center;
+    }
+
+    .copyright {
+        flex-direction: column; /* Stacks the logo image above the text on mobile */
+        gap: 8px;
+        margin: 0; /* Removes unnecessary side margins */
+    }
+
+    .icons {
+        width: 100%;
+        justify-content: center; /* Explicitly forces icons to stay grouped in the center */
+    }
+}

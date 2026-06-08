@@ -70,19 +70,19 @@
 }
 
 .conatiner1{
-    margin: 30px;
+    margin: 30px 15px;
     min-height: 400px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
     place-items: center;
-    gap:25px;
+    gap: 25px;
 }
 .skill-card {
   background: #ffffff;
   padding: 10px;
   border-radius: 12px;
-  width: 60%;        
+  width:100%;      
+  max-width: 160px;  
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   text-align: center;
   transition: transform 0.4s;
@@ -102,10 +102,7 @@
     object-fit: contain;
 
 }
-.vscode{
-  grid-column-start: 2;
-  grid-column-end:3;
-}
+
 .project-cont{
     display: flex;
     flex-direction: row;
